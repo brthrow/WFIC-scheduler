@@ -2,14 +2,18 @@
 <html>
 <head>
 <title>WFIC Room Scheduler</title> 
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
 <header>WFIC Room Scheduling Tool</header>
 
 <div class="Interface">
-<form action="check.php" method="POST">
 <p>Select a room and a timeframe to request</p>
+<table>
+<tr>
+<td>
+<form action="check.php" method="POST">
 	Room: <select name="room">
 			<option value="106">106</option>
 			<option value="108">108</option>
@@ -43,7 +47,8 @@
 			<option value="333">333</option>
 			<option value="335">335</option>
 			</select>
-			
+</td>
+<td>		
 	Start Time: <select name="start">
 			<option value="08:00:00">8:00 AM</option>
 			<option value="08:30:00">8:30 AM</option>
@@ -71,8 +76,8 @@
 			<option value="19:30:00">7:30 PM</option>
 			<option value="20:00:00">8:00 PM</option>
 			</select>
-			
-						
+</td>			
+<td>					
 	End Time: <select name="end">
 			<option value="08:00:00">8:00 AM</option>
 			<option value="08:30:00">8:30 AM</option>
@@ -100,7 +105,17 @@
 			<option value="19:30:00">7:30 PM</option>
 			<option value="20:00:00">8:00 PM</option>
 			</select>
+</td>
+<td>			
+	<div class="buttons">
+	<input type="submit" value="Submit" name="submit">
+	<input type="submit" value="Clear" name="clear">
+	</div>
 </form>
 </div>
+</td>
+</tr>
+</table>
+
 </body>
 </html>
