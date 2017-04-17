@@ -1,0 +1,14 @@
+table {
+	width: 75%;
+	border: 5px solid orange;
+	margin: auto;
+}
+
+td {
+	border: 1px dotted purple;
+	text-align: center;
+}
+
+p, header {
+	text-align: center;
+}
